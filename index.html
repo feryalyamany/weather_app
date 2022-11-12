@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg py-5">
+      <div class="container d-flex justify-content-between align-items-center">
+        <div class="logo d-flex align-items-center">
+          <a href="#"> <img class="logo h-100" src="imgs/logo (1).png" /> </a>
+          <div class="txt list-unstyled ms-3">
+            <a href="#" class="text-white fs-5 d-block">Weather</a>
+            <small
+              ><a
+                class="text-info"
+                href="https://www.weatherapi.com/"
+                title="Free Weather API"
+                >WeatherAPI.com</a
+              >
+            </small>
+          </div>
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="list-unstyled d-flex ms-auto">
+            <li class=""><a href="index.html" class="active">Home</a></li>
+            <li class=""><a href="#">News</a></li>
+            <li class=""><a href="#">Life Cameras</a></li>
+            <li class=""><a href="#">Photos</a></li>
+            <li class=""><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="">
+      <div class="landing-img" style="background-image: url(imgs/banner.png)">
+        <div class="container">
+          <div class="search w-100 pt-5 position-relative">
+            <input
+              id="searchInput"
+              class="w-100 border-0 text-white"
+              type="text"
+              placeholder="Find Your Location..."
+            />
+            <!-- <button id="myBtn" class="border-0  position-absolute">Find</button> -->
+          </div>
+        </div>
+      </div>
+
+      <div class="forecast pb-5">
+        <div class="container">
+          <div id="row" class="row g-0 rounded rounded-3">
+            <div class="col-md-4 col-12">
+              <div class="current">
+                <div class="head d-flex justify-content-between text-white p-2">
+                  <span id="day"></span>
+                  <span id="todaydate"></span>
+                </div>
+                <div class="status text-white-50 p-3">
+                  <h4 id="city" class="text-white"></h4>
+                  <div class="degree d-flex justify-content-between align-items-center">
+                    <h1 id="temp" class="text-white"></h1>
+                    <img id="icon"  class="" />
+                  </div>
+                  <h6 id="desc" class=""></h6>
+                  <div class="icons d-flex align-items-center">
+                    
+                      <img class="pe-2" src="imgs/icon-umberella.png"/>
+                      <span id="humidity" class="me-4 text-white"></span>
+                      
+                    
+                    
+                    <img class="pe-2" src="imgs/icon-wind.png"/>
+                    <span id="wind" class="me-4 text-white"></span>
+                   
+                    
+                    <img class="pe-2" src="imgs/icon-compass.png"/>
+                    <span id="dir" class=" text-white"></span>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-12">
+              <div class="day-next">
+                <div class="head d-flex text-white p-2">
+                  <span class="mx-auto nextDay"></span>
+                </div>
+                <div class="status text-white-50 p-3 text-center">
+                  <div class="degree mt-3 ">
+                    <span
+                      ><img class="nxtIcon"  alt=".."
+                    /></span>
+                    <h1 class="max high text-white"></h1>
+                    <h6 class="min low text-white"></h6>
+                  </div>
+                  <h6 class="my-3 nextDesc"></h6>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-12">
+              <div class="day-after">
+                <div class="head d-flex text-white p-2">
+                  <span class="mx-auto nextDay"></span>
+                </div>
+                <div class="status text-white-50 p-3 text-center">
+                  <div class="degree mt-3 ">
+                    <span
+                      ><img class="nxtIcon"  alt=".."
+                    /></span>
+                    <h1 class="max high text-white"></h1>
+                    <h6 class="min low text-white"></h6>
+                  </div>
+                  <h6 class="my-3 nextDesc"></h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <footer class="pb-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-8">
+            <div class="search w-100 pt-5 position-relative">
+              <input
+                class="w-100 border-0 text-white"
+                type="text"
+                placeholder="Enter your email to subscribe..."
+              />
+              <button class="border-0 position-absolute">Subscribe</button>
+            </div>
+          </div>
+          <div class="col-md-3 offset-md-1">
+            <div class="social-icons pt-5">
+              <span>
+                <a href="#" class="mx-auto px-1"
+                  ><i class="fa-brands fa-facebook-f"></i></a
+              ></span>
+              <span
+                ><a href="#"><i class="fa-brands fa-twitter"></i></a
+              ></span>
+              <span
+                ><a href="#"><i class="fa-brands fa-google-plus"></i></a
+              ></span>
+              <span
+                ><a href="#"><i class="fa-brands fa-pinterest"></i></a
+              ></span>
+            </div>
+          </div>
+        </div>
+
+        <p class="text-white-50 mt-4">
+          Copyright 2022. Designed by FERYAL. All rights reserved
+        </p>
+      </div>
+    </footer>
+
+    <script src="js/all.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

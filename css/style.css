@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa+Ink&family=Aref+Ruqaa:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap');
+
+
+:root{
+    --main-color: #009ad8;
+    --background:#1e202b;
+    --section:#2d303d;
+    --grey:#323544;
+    --input: #262936;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+
+a{
+    text-decoration: none;
+    
+}
+
+nav {
+    background-color: var(--background);
+}
+.list-unstyled li a {
+    color: #fff;
+    margin-left: 10px;
+    width: 100px;
+    height: 40px;
+    border-radius: 50px;
+    border: 2px solid transparent;
+    padding: 5px 20px;
+    transform: transition .3s;
+}
+.list-unstyled li .active{
+border-color: var(--main-color) ;
+color: var(--main-color);
+}
+
+ul li a:hover:not(.active) {
+    border-color: var(--main-color);
+    color: var(--main-color);
+    transition: .3s linear;
+
+}
+
+.txt a {
+    line-height: 15px;
+}
+.sub{
+    font-size: 12px;
+}
+
+input:focus
+ {
+    outline: none;
+    box-shadow: none;
+}
+
+input {
+    background-color: var(--background);
+    padding: 15px;
+    border-radius: 50px;
+    caret-color: white;
+    
+}
+
+button {
+    background-color: var(--main-color);
+    color: white;
+    padding: 10px 35px;
+    border-radius: 50px;
+    right: 5px;
+    top: 53px ;
+}
+
+.landing-img {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 45vh;
+ 
+}
+
+.day-next .head {
+    background-color: #222531;
+}
+.day-next .status{
+   background-color: #262936;
+ 
+
+   
+}
+
+.head {
+    background-color: var(--section) ;
+}
+
+.status {
+    background-color: var(--grey);
+}
+
+.degree h1:not(.high) {
+    font-size: 98px;
+}
+
+.status{
+    height: 250px;
+}
+
+.high {
+    font-size: 40px;
+}
+.forecast {
+    background-color: var(--background);
+}
+footer {
+    background-color: var(--input);
+}
+
+
+main {
+    background-color: var(--background);
+}
+.page-name {
+    background-color: var(--input);
+    padding: 15px;
+    border-radius: 50px;
+}
+
+.page-name a {
+    color: #ccc;
+}
+
+.page-name a:hover {
+color: #fff;
+}
+
+.contact-wrap {
+    background-color: var(--input);
+}
+
+.contact input:focus, 
+.contact textarea:focus {
+outline: none;
+box-shadow: none;
+
+}
+
+.contact input, textarea{
+    background-color: var(--background);
+    border: 1px solid #ccc;
+    
+    padding: 11px 17px;
+    caret-color: white;
+}
+.contact input {
+    border-radius: 50px;
+}
+textarea {
+    border-radius: 20px;
+    height: 150px;
+}
+.contact input:hover, textarea:hover {
+    border-color: var(--main-color);
+}
+
+.bttn button {
+    padding: 7px 20px;
+    margin-top: 0;
+}
+
+.social-icons span {
+    width: 50px;
+    height: 50px;
+    font-size: medium;
+    line-height: 2;
+    text-align: center;
+    padding: 13px;
+    background-color: var(--background);
+    margin-right: 5px;
+    border-radius: 50%;
+    transform: transition .3s;
+}
+.social-icons span a {
+    color: var(--main-color);
+    transform: transition .3s;
+}
+.social-icons span:hover{
+    background-color: var(--main-color);
+    transition: .3s linear;
+}
+.social-icons span:hover a {
+    color: #fff;
+    transition: .3s linear;
+}
